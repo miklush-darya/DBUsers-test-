@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<form action="/registr" method="post" class="form-registr">
+    <p><label>Name: </label> <input type="text" name="name" value="" required /></p>
+    <p><label>Email: </label> <input type="text" name="email" value="" required /></p>
+    <p><label>Password: </label> <input type="password" name="password" value="" required /></p>
+    <p><label>Password2: </label> <input type="password" name="password2" value="" required /></p>
+
+    <p><label>Old: </label> <input type="text" name="old" value="" required /></p>
+    <p><label>City: </label> <input type="text" name="city" value="" required /></p>
+
+
+    <!-- <p><label>Message: </label></p> -->
+
+    <!-- <p><textarea name="message" rows=7 cols=40></textarea></p> -->
+    <p><input type="submit" value="Registr" /></p>
+
+</form>
+
+{% endblock %}

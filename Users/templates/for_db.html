@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+        <ul>
+            {% for d in list %}
+            <li><p>id: {{d.id}}, email: {{d.email}}</p>
+                <ul>
+                    <li>Имя: {{d.j_n.name}}</li>
+                    <li>Возраст: {{d.j_n.old}}</li>
+                    <li>Город: {{d.j_n.city}}</li>
+                </ul>
+            </li>
+            {% endfor %}
+            </ul>
+
+{% endblock %}
